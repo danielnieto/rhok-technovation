@@ -1,22 +1,22 @@
-html{
+html {
     margin: 0;
     padding: 0;
 }
 
-html *{
-    box-sizing: border-box;    
+html * {
+    box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #ededed;
     background-image: url(../assets/background.svg);
-    background-position-y:-2px;
-    background-position-x:-1vw;
+    background-position-y: -2px;
+    background-position-x: -1vw;
     background-size: 102vw auto;
     background-repeat: no-repeat;
 }
 
-i.icon{
+i.icon {
     display: inline-block;
     width: 12px;
     height: 12px;
@@ -24,16 +24,16 @@ i.icon{
     background-repeat: no-repeat;
 }
 
-.icon-calendar{
+.icon-calendar {
     background-image: url(../assets/calendar_ico.svg);
 }
 
-main{
+main {
     margin: 0 auto;
     max-width: 960px;
 }
 
-header{
+header {
     height: 110px;
     display: flex;
     padding: 0 25px;
@@ -41,12 +41,12 @@ header{
     align-items: center;
 }
 
-header .logo{
+header .logo {
     width: 130px;
 }
 
-header .today-date{
-    background-color: rgba(51,51,51,.26);
+header .today-date {
+    background-color: rgba(51, 51, 51, .26);
     height: 30px;
     color: #fff;
     padding: 0 12px;
@@ -56,26 +56,25 @@ header .today-date{
     justify-content: center;
     width: 160px;
     font-size: 9px;
-    
 }
 
-header .today-date span{
+header .today-date span {
     margin-right: auto;
 }
 
-header .today-date .icon{
+header .today-date .icon {
     margin-right: auto;
 }
 
-article{
+article {
     background-color: white;
     padding: 40px 25px;
     border-radius: 10px;
     min-height: calc(100vh - 220px);
-    box-shadow: 0px 0px 5px 3px rgba(0,0,0,.2);
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, .2);
 }
 
-article h2{
+article h2 {
     display: inline-block;
     border-bottom: 3px solid #5bbf95;
     padding-bottom: 5px;
@@ -83,16 +82,16 @@ article h2{
     font-weight: bold;
 }
 
-.highlight{
+.highlight {
     color: #895f86;
 }
 
-.registrations-table{
-    width:100%;
+.registrations-table {
+    width: 100%;
     border-collapse: collapse
 }
 
-.registrations-table th{
+.registrations-table th {
     text-transform: capitalize;
     position: relative;
     border-bottom: 2px solid #333333;
@@ -102,7 +101,7 @@ article h2{
     padding-right: 20px;
 }
 
-.registrations-table td{
+.registrations-table td {
     padding: 10px 0;
     box-sizing: border-box;
     min-height: 26px;
@@ -110,11 +109,11 @@ article h2{
     padding-left: 5px;
 }
 
-.registrations-table tr td{
-    background-color: #fff;    
+.registrations-table tr td {
+    background-color: #fff;
 }
 
-.registrations-table tr:nth-of-type(odd) td{
+.registrations-table tr:nth-of-type(odd) td {
     background-color: #f9fafb;
 }
 
@@ -122,23 +121,22 @@ article h2{
     text-transform: capitalize;
 }
 
-
-.icon-caret{
+.icon-caret {
     background-image: url(../assets/dropdown.svg);
 }
 
-.registrations-table th .icon-caret{
+.registrations-table th .icon-caret {
     position: absolute;
     right: 10px;
     top: 7px;
 }
 
-.registrations-table .icon-status{
-    background-image: url(../assets/pending.svg); 
+.registrations-table .icon-status {
+    background-image: url(../assets/pending.svg);
     margin-right: 5px;
-    vertical-align: -2px;   
+    vertical-align: -2px;
 }
 
-.registrations-table .approved .icon-status{
-    background-image: url(../assets/approved.svg);    
+.registrations-table .approved .icon-status {
+    background-image: url(../assets/approved.svg);
 }
