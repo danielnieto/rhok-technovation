@@ -118,7 +118,7 @@ article h2 {
     padding-left: 5px;
 }
 
-.registrations-table tr td {
+.registrations-table tr:nth-of-type(even) td {
     background-color: #fff;
 }
 
