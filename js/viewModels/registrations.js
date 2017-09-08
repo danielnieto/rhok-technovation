@@ -28,7 +28,7 @@ define(['ojs/ojcore', 'knockout', 'jquery'], function (oj, ko, $) {
         var state = registration.attributes.FromState || "";
         var country = registration.attributes.FromCountry || "";
 
-        return city.toLowerCase() + ", " + state.toLowerCase() + ", " + country;
+        return city.toLowerCase() + ", " + state.toLowerCase().replace(".",'') + ", " + country;
     }
 
     // extract Registrations information from fetched JSON and push it to an ObservableArray
