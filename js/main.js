@@ -63,15 +63,12 @@ requirejs.config({
  * For a listing of which JET component modules are required for each component, see the specific component
  * demo pages in the JET cookbook.
  */
-require(['ojs/ojcore', 'knockout', 'jquery', 'ojs/ojknockout', 'ojs/ojbutton', 'ojs/ojtoolbar', 'ojs/ojmenu'], // add additional JET component modules as needed
+require(['ojs/ojcore', 'knockout', 'jquery', 'ojs/ojknockout', 'ojs/ojmodule', 'ojs/ojrouter', 'text'], // add additional JET component modules as needed
     function (oj, ko, $) // this callback gets executed when all required modules are loaded
     {
         // add any startup code that you want here
-        var viewModel = {
-            message: "hello technovation"
-        }
 
-        ko.applyBindings(viewModel);
+        ko.applyBindings();
 
     }
 );
