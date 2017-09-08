@@ -2,12 +2,12 @@ define(['ojs/ojcore', 'knockout', 'jquery'], function (oj, ko, $) {
 
     // default field values
     var defaultValues = {
-        time: "---",
-        email: "---",
-        zipCode: "---",
-        school: "---",
-        location: "---",
-        guardian: "---",
+        time: "",
+        email: "",
+        zipCode: "",
+        school: "",
+        location: "",
+        guardian: "",
         status: 0
     }
 
