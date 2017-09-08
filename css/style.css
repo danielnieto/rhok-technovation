@@ -149,3 +149,7 @@ article h2 {
 .registrations-table .approved .icon-status {
     background-image: url(../assets/approved.svg);
 }
+
+a{
+    cursor: pointer;
+}

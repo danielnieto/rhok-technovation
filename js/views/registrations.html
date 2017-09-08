@@ -24,7 +24,13 @@
             <td data-bind="text: guardian"></td>
             <td data-bind="css:{approved: status}" class="capitalize">
                 <i class="icon icon-status"></i>
-                <span data-bind="text: status? 'approved' : 'pending' "></span>
+                <!-- ko if: status -->
+                    <a data-bind="attr: {'href': consentUrl}" target="_BLANK">approved</a>
+                <!-- /ko -->
+                <!-- ko if: !status -->
+                    <span>pending</span>
+                <!-- /ko -->
+
             </td>
         </tr>
     </tbody>

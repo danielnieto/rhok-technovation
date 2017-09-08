@@ -8,11 +8,12 @@ define(['ojs/ojcore', 'knockout', 'jquery'], function (oj, ko, $) {
         school: "",
         location: "",
         guardian: "",
-        status: 0
+        status: 0,
+        consentUrl: ""
     }
 
     // Registration model
-    function Registration(time, email, zipCode, school, location, guardian, status) {
+    function Registration(time, email, zipCode, school, location, guardian, status, consentUrl) {
         this.time = time || defaultValues.time;
         this.email = email || defaultValues.email;
         this.zipCode = zipCode || defaultValues.zipCode;
@@ -20,6 +21,7 @@ define(['ojs/ojcore', 'knockout', 'jquery'], function (oj, ko, $) {
         this.location = location || defaultValues.location;
         this.guardian = guardian || defaultValues.guardian;
         this.status = status || defaultValues.status;
+        this.consentUrl = consentUrl || defaultValues.consentUrl;
     }
 
     // this function formats a location to: zapopan, jal, MX
@@ -45,9 +47,10 @@ define(['ojs/ojcore', 'knockout', 'jquery'], function (oj, ko, $) {
             var location = formatLocation(registration); //format the location
             var guardian = registration.parameters.guardian.email;
             var status = registration.isConsentSent; //isConsentSent is a boolean
+            var consentUrl = registration.consentForm; //consent form photo
 
             // add new Registration into a temporal array
-            tmpArray.push(new Registration(time, email, zipCode, school, location, guardian, status));
+            tmpArray.push(new Registration(time, email, zipCode, school, location, guardian, status, consentUrl));
         });
 
         // after the temp array is built, then push it into the observable array just once, so it triggers rendering
