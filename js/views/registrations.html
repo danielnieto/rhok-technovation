@@ -1,0 +1,32 @@
+<h2>
+    <span class="highlight" data-bind="text: registrations().length"></span> New Registrations
+</h2>
+
+<table class="registrations-table">
+    <thead>
+        <tr data-bind="foreach: $module.columns">
+            <th>
+                <span data-bind="text: display"></span>
+                <!-- ko if: sortable -->
+                <i class="icon icon-caret"></i>
+                <!-- /ko -->
+            </th>
+        </tr>
+    </thead>
+
+    <tbody data-bind="foreach: $module.registrations">
+        <tr>
+            <td data-bind="text: time"></td>
+            <td data-bind="text: email"></td>
+            <td data-bind="text: zipCode"></td>
+            <td data-bind="text: school" class="capitalize"></td>
+            <td data-bind="text: location" class="capitalize"></td>
+            <td data-bind="text: guardian"></td>
+            <td data-bind="css:{approved: status}" class="capitalize">
+                <i class="icon icon-status"></i>
+                <span data-bind="text: status? 'approved' : 'pending' "></span>
+            </td>
+        </tr>
+    </tbody>
+    
+</table>
